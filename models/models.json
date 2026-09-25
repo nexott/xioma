@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "comment": "xioma model changer pack. models: kind=asset (rigged catalog model id) or kind=custom (rig built from parts; mesh/texture files are downloaded from this repo). weapons attach to any model: asset = catalog model id, grip = [x,y,z,rx,ry,rz] relative to the right arm (radians), hold = tool-hold animation id (R6).",
+  "weapons": [
+    { "name": "Desert Eagle", "asset": 15651280815, "grip": [0.1, -1.05, -0.4, -1.5707963, 0, 0], "hold": 182393478 },
+    { "name": "AK-47", "asset": 94968837017770, "grip": [0.1, -1.1, -0.5, -1.5707963, 0, 0], "hold": 182393478 },
+    { "name": "Katana", "asset": 8579151891, "grip": [0, -1.0, -0.2, 0, 0, 1.5707963], "hold": 182393478 },
+    { "name": "Hunting Rifle", "asset": 15766159005, "grip": [0.1, -1.05, -0.6, -1.5707963, 0, 0], "hold": 182393478 }
+  ],
+  "models": [
+    { "kind": "asset", "name": "Scream", "id": 8750931560 },
+    { "kind": "asset", "name": "Ghostface", "id": 14495433190 },
+    { "kind": "asset", "name": "Naruto Uzumaki", "id": 2926807213 },
+    { "kind": "asset", "name": "Chainsaw Man", "id": 13924461710 },
+    { "kind": "asset", "name": "Makima", "id": 11873784745 },
+    { "kind": "asset", "name": "Ayano Aishi", "id": 14876618901 },
+    { "kind": "asset", "name": "Anime Girl", "id": 2513353543 },
+    { "kind": "asset", "name": "Saitama", "id": 138514977252725 },
+    { "kind": "asset", "name": "Siren Head", "id": 101475983229238 },
+    { "kind": "asset", "name": "Cartoon Cat", "id": 8486207138 }
+  ]
+}
