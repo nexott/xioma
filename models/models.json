@@ -1,22 +1,387 @@
 {
   "version": 1,
-  "comment": "xioma model changer pack. models: kind=asset (rigged catalog model id) or kind=custom (rig built from parts; mesh/texture files are downloaded from this repo). weapons attach to any model: asset = catalog model id, grip = [x,y,z,rx,ry,rz] relative to the right arm (radians), hold = tool-hold animation id (R6).",
+  "comment": "xioma model changer pack. kind=custom: R6 rig built from repo-hosted meshes (real converted character meshes; parts[].center sets the anatomical joint pivot, parts[].rot the rest pose rotation). kind=asset: catalog model id. weapons attach to any model: grip = [x,y,z,rx,ry,rz] relative to the right arm (radians), hold = tool-hold animation id (R6).",
   "weapons": [
-    { "name": "Desert Eagle", "asset": 15651280815, "grip": [0.1, -1.05, -0.4, -1.5707963, 0, 0], "hold": 182393478 },
-    { "name": "AK-47", "asset": 94968837017770, "grip": [0.1, -1.1, -0.5, -1.5707963, 0, 0], "hold": 182393478 },
-    { "name": "Katana", "asset": 8579151891, "grip": [0, -1.0, -0.2, 0, 0, 1.5707963], "hold": 182393478 },
-    { "name": "Hunting Rifle", "asset": 15766159005, "grip": [0.1, -1.05, -0.6, -1.5707963, 0, 0], "hold": 182393478 }
+    {
+      "name": "Desert Eagle",
+      "asset": 15651280815,
+      "grip": [
+        0.1,
+        -2.0,
+        -0.4,
+        -1.5707963,
+        0,
+        0
+      ],
+      "hold": 182393478
+    },
+    {
+      "name": "AK-47",
+      "asset": 94968837017770,
+      "grip": [
+        0.1,
+        -2.05,
+        -0.5,
+        -1.5707963,
+        0,
+        0
+      ],
+      "hold": 182393478
+    },
+    {
+      "name": "Katana",
+      "asset": 8579151891,
+      "grip": [
+        0,
+        -1.95,
+        -0.2,
+        0,
+        0,
+        1.5707963
+      ],
+      "hold": 182393478
+    },
+    {
+      "name": "Hunting Rifle",
+      "asset": 15766159005,
+      "grip": [
+        0.1,
+        -2.0,
+        -0.6,
+        -1.5707963,
+        0,
+        0
+      ],
+      "hold": 182393478
+    }
   ],
   "models": [
-    { "kind": "asset", "name": "Scream", "id": 8750931560 },
-    { "kind": "asset", "name": "Ghostface", "id": 14495433190 },
-    { "kind": "asset", "name": "Naruto Uzumaki", "id": 2926807213 },
-    { "kind": "asset", "name": "Chainsaw Man", "id": 13924461710 },
-    { "kind": "asset", "name": "Makima", "id": 11873784745 },
-    { "kind": "asset", "name": "Ayano Aishi", "id": 14876618901 },
-    { "kind": "asset", "name": "Anime Girl", "id": 2513353543 },
-    { "kind": "asset", "name": "Saitama", "id": 138514977252725 },
-    { "kind": "asset", "name": "Siren Head", "id": 101475983229238 },
-    { "kind": "asset", "name": "Cartoon Cat", "id": 8486207138 }
+    {
+      "kind": "custom",
+      "name": "Anime Girl A",
+      "rig": "R6",
+      "thumb": "models/anime_girl_a/thumb.png",
+      "hold": 182393478,
+      "parts": [
+        {
+          "part": "Head",
+          "mesh": "models/anime_girl_a/Head.mesh",
+          "texture": "models/anime_girl_a/tex.png",
+          "center": [
+            -0.0,
+            1.227,
+            0.065
+          ],
+          "size": [
+            0.81,
+            1.03,
+            0.79
+          ]
+        },
+        {
+          "part": "Torso",
+          "mesh": "models/anime_girl_a/Torso.mesh",
+          "texture": "models/anime_girl_a/tex.png",
+          "center": [
+            0.0,
+            0.007,
+            0.0
+          ],
+          "size": [
+            1.05,
+            1.84,
+            0.82
+          ]
+        },
+        {
+          "part": "Right Arm",
+          "mesh": "models/anime_girl_a/RightArm.mesh",
+          "texture": "models/anime_girl_a/tex.png",
+          "center": [
+            0.26,
+            1.116,
+            0.036
+          ],
+          "size": [
+            1.13,
+            2.46,
+            0.69
+          ],
+          "rot": [
+            0,
+            0,
+            0.2618
+          ]
+        },
+        {
+          "part": "Left Arm",
+          "mesh": "models/anime_girl_a/LeftArm.mesh",
+          "texture": "models/anime_girl_a/tex.png",
+          "center": [
+            -0.26,
+            1.116,
+            0.036
+          ],
+          "size": [
+            1.16,
+            2.41,
+            0.69
+          ],
+          "rot": [
+            0,
+            0,
+            -0.2618
+          ]
+        },
+        {
+          "part": "Right Leg",
+          "mesh": "models/anime_girl_a/RightLeg.mesh",
+          "texture": "models/anime_girl_a/tex.png",
+          "center": [
+            0.219,
+            -0.105,
+            0.017
+          ],
+          "size": [
+            1.41,
+            3.02,
+            1.4
+          ]
+        },
+        {
+          "part": "Left Leg",
+          "mesh": "models/anime_girl_a/LeftLeg.mesh",
+          "texture": "models/anime_girl_a/tex.png",
+          "center": [
+            -0.219,
+            -0.105,
+            0.017
+          ],
+          "size": [
+            1.41,
+            3.02,
+            1.4
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "custom",
+      "name": "Anime Girl B",
+      "rig": "R6",
+      "thumb": "models/anime_girl_b/thumb.png",
+      "hold": 182393478,
+      "parts": [
+        {
+          "part": "Head",
+          "mesh": "models/anime_girl_b/Head.mesh",
+          "texture": "models/anime_girl_b/tex.png",
+          "center": [
+            0.0,
+            1.029,
+            0.067
+          ],
+          "size": [
+            1.92,
+            2.69,
+            1.41
+          ]
+        },
+        {
+          "part": "Torso",
+          "mesh": "models/anime_girl_b/Torso.mesh",
+          "texture": "models/anime_girl_b/tex.png",
+          "center": [
+            0.0,
+            -0.17,
+            0.0
+          ],
+          "size": [
+            1.11,
+            1.61,
+            0.96
+          ]
+        },
+        {
+          "part": "Right Arm",
+          "mesh": "models/anime_girl_b/RightArm.mesh",
+          "texture": "models/anime_girl_b/tex.png",
+          "center": [
+            0.261,
+            0.917,
+            0.038
+          ],
+          "size": [
+            0.46,
+            2.11,
+            0.55
+          ],
+          "rot": [
+            0,
+            0,
+            0.2618
+          ]
+        },
+        {
+          "part": "Left Arm",
+          "mesh": "models/anime_girl_b/LeftArm.mesh",
+          "texture": "models/anime_girl_b/tex.png",
+          "center": [
+            -0.261,
+            0.917,
+            0.038
+          ],
+          "size": [
+            0.46,
+            2.11,
+            0.55
+          ],
+          "rot": [
+            0,
+            0,
+            -0.2618
+          ]
+        },
+        {
+          "part": "Right Leg",
+          "mesh": "models/anime_girl_b/RightLeg.mesh",
+          "texture": "models/anime_girl_b/tex.png",
+          "center": [
+            0.22,
+            -0.282,
+            0.018
+          ],
+          "size": [
+            0.84,
+            2.8,
+            1.37
+          ]
+        },
+        {
+          "part": "Left Leg",
+          "mesh": "models/anime_girl_b/LeftLeg.mesh",
+          "texture": "models/anime_girl_b/tex.png",
+          "center": [
+            -0.22,
+            -0.282,
+            0.018
+          ],
+          "size": [
+            0.93,
+            2.81,
+            1.37
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "custom",
+      "name": "Anime Girl C",
+      "rig": "R6",
+      "thumb": "models/anime_girl_c/thumb.png",
+      "hold": 182393478,
+      "parts": [
+        {
+          "part": "Head",
+          "mesh": "models/anime_girl_c/Head.mesh",
+          "texture": "models/anime_girl_c/tex.png",
+          "center": [
+            0.0,
+            1.219,
+            0.051
+          ],
+          "size": [
+            1.07,
+            0.98,
+            0.77
+          ]
+        },
+        {
+          "part": "Torso",
+          "mesh": "models/anime_girl_c/Torso.mesh",
+          "texture": "models/anime_girl_c/tex.png",
+          "center": [
+            0.0,
+            -0.042,
+            0.0
+          ],
+          "size": [
+            1.05,
+            1.89,
+            0.81
+          ]
+        },
+        {
+          "part": "Right Arm",
+          "mesh": "models/anime_girl_c/RightArm.mesh",
+          "texture": "models/anime_girl_c/tex.png",
+          "center": [
+            0.374,
+            1.078,
+            0.018
+          ],
+          "size": [
+            0.47,
+            2.2,
+            0.59
+          ],
+          "rot": [
+            0,
+            0,
+            0.2618
+          ]
+        },
+        {
+          "part": "Left Arm",
+          "mesh": "models/anime_girl_c/LeftArm.mesh",
+          "texture": "models/anime_girl_c/tex.png",
+          "center": [
+            -0.374,
+            1.078,
+            0.018
+          ],
+          "size": [
+            0.47,
+            2.2,
+            0.59
+          ],
+          "rot": [
+            0,
+            0,
+            -0.2618
+          ]
+        },
+        {
+          "part": "Right Leg",
+          "mesh": "models/anime_girl_c/RightLeg.mesh",
+          "texture": "models/anime_girl_c/tex.png",
+          "center": [
+            0.246,
+            -0.17,
+            0.011
+          ],
+          "size": [
+            0.61,
+            2.91,
+            0.95
+          ]
+        },
+        {
+          "part": "Left Leg",
+          "mesh": "models/anime_girl_c/LeftLeg.mesh",
+          "texture": "models/anime_girl_c/tex.png",
+          "center": [
+            -0.246,
+            -0.17,
+            0.011
+          ],
+          "size": [
+            0.61,
+            2.91,
+            0.95
+          ]
+        }
+      ]
+    }
   ]
 }
