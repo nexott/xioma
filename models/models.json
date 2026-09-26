@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "comment": "xioma model changer pack. kind=custom: R6 rig built from repo-hosted meshes (real converted character meshes; parts[].center sets the anatomical joint pivot, parts[].rot the rest pose rotation). kind=asset: catalog model id. weapons attach to any model: grip = [x,y,z,rx,ry,rz] relative to the right arm (radians), hold = tool-hold animation id (R6).",
+  "comment": "xioma model changer pack. kind=custom: R6 rig built from repo-hosted meshes (real converted character meshes; parts[].center sets the anatomical joint pivot, parts[].rot the rest pose rotation, parts[].origin the mesh bounding-box center (mesh-local) used to place a clean blocky fallback part when custom meshes can't load). kind=asset: catalog model id. weapons attach to any model: grip = [x,y,z,rx,ry,rz] relative to the right arm (radians), hold = tool-hold animation id (R6).",
   "weapons": [
     {
       "name": "Desert Eagle",
@@ -60,13 +60,13 @@
       "kind": "custom",
       "name": "Anime Girl A",
       "rig": "R6",
-      "thumb": "models/anime_girl_a/thumb.png",
+      "thumb": "models/anime_a/thumb.png",
       "hold": 182393478,
       "parts": [
         {
           "part": "Head",
-          "mesh": "models/anime_girl_a/Head.mesh",
-          "texture": "models/anime_girl_a/tex.png",
+          "mesh": "models/anime_a/Head.mesh",
+          "texture": "models/anime_a/tex.png",
           "center": [
             -0.0,
             1.227,
@@ -76,12 +76,17 @@
             0.81,
             1.03,
             0.79
+          ],
+          "origin": [
+            -0.0,
+            0.36,
+            -0.017
           ]
         },
         {
           "part": "Torso",
-          "mesh": "models/anime_girl_a/Torso.mesh",
-          "texture": "models/anime_girl_a/tex.png",
+          "mesh": "models/anime_a/Torso.mesh",
+          "texture": "models/anime_a/tex.png",
           "center": [
             0.0,
             0.007,
@@ -91,12 +96,17 @@
             1.05,
             1.84,
             0.82
+          ],
+          "origin": [
+            -0.0,
+            0.416,
+            0.002
           ]
         },
         {
           "part": "Right Arm",
-          "mesh": "models/anime_girl_a/RightArm.mesh",
-          "texture": "models/anime_girl_a/tex.png",
+          "mesh": "models/anime_a/RightArm.mesh",
+          "texture": "models/anime_a/tex.png",
           "center": [
             0.26,
             1.116,
@@ -111,12 +121,17 @@
             0,
             0,
             0.2618
+          ],
+          "origin": [
+            -0.163,
+            -0.669,
+            0.033
           ]
         },
         {
           "part": "Left Arm",
-          "mesh": "models/anime_girl_a/LeftArm.mesh",
-          "texture": "models/anime_girl_a/tex.png",
+          "mesh": "models/anime_a/LeftArm.mesh",
+          "texture": "models/anime_a/tex.png",
           "center": [
             -0.26,
             1.116,
@@ -131,12 +146,17 @@
             0,
             0,
             -0.2618
+          ],
+          "origin": [
+            0.17,
+            -0.696,
+            0.033
           ]
         },
         {
           "part": "Right Leg",
-          "mesh": "models/anime_girl_a/RightLeg.mesh",
-          "texture": "models/anime_girl_a/tex.png",
+          "mesh": "models/anime_a/RightLeg.mesh",
+          "texture": "models/anime_a/tex.png",
           "center": [
             0.219,
             -0.105,
@@ -146,12 +166,17 @@
             1.41,
             3.02,
             1.4
+          ],
+          "origin": [
+            -0.107,
+            -1.384,
+            0.276
           ]
         },
         {
           "part": "Left Leg",
-          "mesh": "models/anime_girl_a/LeftLeg.mesh",
-          "texture": "models/anime_girl_a/tex.png",
+          "mesh": "models/anime_a/LeftLeg.mesh",
+          "texture": "models/anime_a/tex.png",
           "center": [
             -0.219,
             -0.105,
@@ -161,6 +186,11 @@
             1.41,
             3.02,
             1.4
+          ],
+          "origin": [
+            0.107,
+            -1.384,
+            0.276
           ]
         }
       ]
@@ -169,13 +199,13 @@
       "kind": "custom",
       "name": "Anime Girl B",
       "rig": "R6",
-      "thumb": "models/anime_girl_b/thumb.png",
+      "thumb": "models/anime_b/thumb.png",
       "hold": 182393478,
       "parts": [
         {
           "part": "Head",
-          "mesh": "models/anime_girl_b/Head.mesh",
-          "texture": "models/anime_girl_b/tex.png",
+          "mesh": "models/anime_b/Head.mesh",
+          "texture": "models/anime_b/tex.png",
           "center": [
             0.0,
             1.029,
@@ -185,12 +215,17 @@
             1.92,
             2.69,
             1.41
+          ],
+          "origin": [
+            0.001,
+            -0.274,
+            0.27
           ]
         },
         {
           "part": "Torso",
-          "mesh": "models/anime_girl_b/Torso.mesh",
-          "texture": "models/anime_girl_b/tex.png",
+          "mesh": "models/anime_b/Torso.mesh",
+          "texture": "models/anime_b/tex.png",
           "center": [
             0.0,
             -0.17,
@@ -200,12 +235,17 @@
             1.11,
             1.61,
             0.96
+          ],
+          "origin": [
+            0.0,
+            0.432,
+            0.027
           ]
         },
         {
           "part": "Right Arm",
-          "mesh": "models/anime_girl_b/RightArm.mesh",
-          "texture": "models/anime_girl_b/tex.png",
+          "mesh": "models/anime_b/RightArm.mesh",
+          "texture": "models/anime_b/tex.png",
           "center": [
             0.261,
             0.917,
@@ -220,12 +260,17 @@
             0,
             0,
             0.2618
+          ],
+          "origin": [
+            -0.049,
+            -0.837,
+            -0.039
           ]
         },
         {
           "part": "Left Arm",
-          "mesh": "models/anime_girl_b/LeftArm.mesh",
-          "texture": "models/anime_girl_b/tex.png",
+          "mesh": "models/anime_b/LeftArm.mesh",
+          "texture": "models/anime_b/tex.png",
           "center": [
             -0.261,
             0.917,
@@ -240,12 +285,17 @@
             0,
             0,
             -0.2618
+          ],
+          "origin": [
+            0.049,
+            -0.837,
+            -0.039
           ]
         },
         {
           "part": "Right Leg",
-          "mesh": "models/anime_girl_b/RightLeg.mesh",
-          "texture": "models/anime_girl_b/tex.png",
+          "mesh": "models/anime_b/RightLeg.mesh",
+          "texture": "models/anime_b/tex.png",
           "center": [
             0.22,
             -0.282,
@@ -255,12 +305,17 @@
             0.84,
             2.8,
             1.37
+          ],
+          "origin": [
+            0.149,
+            -1.318,
+            0.113
           ]
         },
         {
           "part": "Left Leg",
-          "mesh": "models/anime_girl_b/LeftLeg.mesh",
-          "texture": "models/anime_girl_b/tex.png",
+          "mesh": "models/anime_b/LeftLeg.mesh",
+          "texture": "models/anime_b/tex.png",
           "center": [
             -0.22,
             -0.282,
@@ -270,6 +325,11 @@
             0.93,
             2.81,
             1.37
+          ],
+          "origin": [
+            -0.102,
+            -1.314,
+            0.113
           ]
         }
       ]
@@ -278,13 +338,13 @@
       "kind": "custom",
       "name": "Anime Girl C",
       "rig": "R6",
-      "thumb": "models/anime_girl_c/thumb.png",
+      "thumb": "models/anime_c/thumb.png",
       "hold": 182393478,
       "parts": [
         {
           "part": "Head",
-          "mesh": "models/anime_girl_c/Head.mesh",
-          "texture": "models/anime_girl_c/tex.png",
+          "mesh": "models/anime_c/Head.mesh",
+          "texture": "models/anime_c/tex.png",
           "center": [
             0.0,
             1.219,
@@ -294,12 +354,17 @@
             1.07,
             0.98,
             0.77
+          ],
+          "origin": [
+            0.0,
+            0.392,
+            -0.059
           ]
         },
         {
           "part": "Torso",
-          "mesh": "models/anime_girl_c/Torso.mesh",
-          "texture": "models/anime_girl_c/tex.png",
+          "mesh": "models/anime_c/Torso.mesh",
+          "texture": "models/anime_c/tex.png",
           "center": [
             0.0,
             -0.042,
@@ -309,12 +374,17 @@
             1.05,
             1.89,
             0.81
+          ],
+          "origin": [
+            -0.0,
+            0.514,
+            0.029
           ]
         },
         {
           "part": "Right Arm",
-          "mesh": "models/anime_girl_c/RightArm.mesh",
-          "texture": "models/anime_girl_c/tex.png",
+          "mesh": "models/anime_c/RightArm.mesh",
+          "texture": "models/anime_c/tex.png",
           "center": [
             0.374,
             1.078,
@@ -329,12 +399,17 @@
             0,
             0,
             0.2618
+          ],
+          "origin": [
+            -0.036,
+            -0.824,
+            -0.06
           ]
         },
         {
           "part": "Left Arm",
-          "mesh": "models/anime_girl_c/LeftArm.mesh",
-          "texture": "models/anime_girl_c/tex.png",
+          "mesh": "models/anime_c/LeftArm.mesh",
+          "texture": "models/anime_c/tex.png",
           "center": [
             -0.374,
             1.078,
@@ -349,12 +424,17 @@
             0,
             0,
             -0.2618
+          ],
+          "origin": [
+            0.035,
+            -0.824,
+            -0.058
           ]
         },
         {
           "part": "Right Leg",
-          "mesh": "models/anime_girl_c/RightLeg.mesh",
-          "texture": "models/anime_girl_c/tex.png",
+          "mesh": "models/anime_c/RightLeg.mesh",
+          "texture": "models/anime_c/tex.png",
           "center": [
             0.246,
             -0.17,
@@ -364,12 +444,17 @@
             0.61,
             2.91,
             0.95
+          ],
+          "origin": [
+            -0.028,
+            -1.373,
+            0.033
           ]
         },
         {
           "part": "Left Leg",
-          "mesh": "models/anime_girl_c/LeftLeg.mesh",
-          "texture": "models/anime_girl_c/tex.png",
+          "mesh": "models/anime_c/LeftLeg.mesh",
+          "texture": "models/anime_c/tex.png",
           "center": [
             -0.246,
             -0.17,
@@ -379,6 +464,11 @@
             0.61,
             2.91,
             0.95
+          ],
+          "origin": [
+            0.027,
+            -1.373,
+            0.033
           ]
         }
       ]

@@ -481,12 +481,14 @@ def convert(vrm_path, out_dir, name):
         arr = np.array([[v[0], v[1], v[2]] for v in verts_out])
         mn, mx = arr.min(axis=0), arr.max(axis=0)
         size = np.maximum(mx - mn, 0.2)
+        origin = (mn + mx) / 2.0
         entry = {
             "part": pname,
             "mesh": f"models/{slug}/{pname.replace(' ', '')}.mesh",
             "texture": f"models/{slug}/tex.png",
             "center": [round(float(center[0]), 3), round(float(center[1]), 3), round(float(center[2]), 3)],
             "size": [round(float(size[0]), 2), round(float(size[1]), 2), round(float(size[2]), 2)],
+            "origin": [round(float(o), 3) for o in origin],
         }
         if pname in ARM_REST:
             ang = math.degrees(math.atan2(ARM_REST[pname][1, 0], ARM_REST[pname][0, 0]))
